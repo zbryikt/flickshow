@@ -1,0 +1,45 @@
+{
+  "author": "zbryikt",
+  "name": "fedep",
+  "license": "MIT",
+  "files": [
+    "cli.js"
+  ],
+  "description": "Frontend dependency installer",
+  "version": "1.1.7",
+  "homepage": "https://github.com/plotdb/fedep",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plotdb/fedep"
+  },
+  "engines": {
+    "node": ">=10.14.1",
+    "npm": ">=6.4.1"
+  },
+  "dependencies": {
+    "@plotdb/colors": "^0.0.1",
+    "browserify": "^17.0.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.2.0",
+    "yargs": "^16.1.0"
+  },
+  "devDependencies": {
+    "@zbryikt/template": "^2.3.21",
+    "ldcover": "^2.1.0",
+    "ldview": "^0.2.3",
+    "livescript": "^1.6.0"
+  },
+  "bin": {
+    "fedep": "./cli.js"
+  },
+  "frontendDependencies": {
+    "root": "web/static/assets/lib",
+    "modules": [
+      {
+        "name": "ldview",
+        "link": true
+      },
+      "ldcover"
+    ]
+  }
+}

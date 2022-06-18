@@ -1,0 +1,43 @@
+{
+  "name": "flickshow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx server -r web -o true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@loadingio/bootstrap.ext": "^0.0.8",
+    "@loadingio/debounce.js": "^1.0.1",
+    "@loadingio/ldquery": "^3.0.3",
+    "@loadingio/loading.css": "^3.1.0",
+    "@zbryikt/deploy": "^0.0.1",
+    "@zbryikt/template": "^2.3.37",
+    "bootstrap": "^4.6.1",
+    "fedep": "^1.1.7",
+    "ldcover": "^3.2.1",
+    "ldiconfont": "^0.2.1",
+    "ldloader": "^3.0.1",
+    "ldview": "^1.1.1",
+    "proxise": "^1.0.1"
+  },
+  "frontendDependencies": {
+    "root": "web/static/assets/lib",
+    "modules": [
+      "@loadingio/bootstrap.ext",
+      "@loadingio/debounce.js",
+      "@loadingio/ldquery",
+      "@loadingio/loading.css",
+      "bootstrap",
+      "fedep",
+      "ldcover",
+      "ldiconfont",
+      "ldloader",
+      "ldview",
+      "proxise"
+    ]
+  }
+}
