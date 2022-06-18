@@ -283,27 +283,29 @@ prefix = function(n) { return (!n?[]:(Array.isArray(n)?n:[n])).map(function(it){
 ;pug_debug_line = 5;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "\u003Chead\u003E";
 ;pug_debug_line = 6;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+libLoader.root("assets/lib");
+;pug_debug_line = 7;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_mixins["css"]([
       {name: "bootstrap", path: "dist/css/bootstrap.min.css"}
     ]);
-;pug_debug_line = 9;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 10;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "\u003Cstyle type=\"text\u002Fcss\"\u003E";
-;pug_debug_line = 9;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 10;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "html,body{width:100%;height:100%}\u003C\u002Fstyle\u003E\u003C\u002Fhead\u003E";
-;pug_debug_line = 11;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 12;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "\u003Cbody\u003E";
-;pug_debug_line = 12;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 13;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "\u003Cdiv class=\"w-100 h-100 bg-dark\" ld=\"wall\"\u003E";
-;pug_debug_line = 12;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 13;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "hi\u003C\u002Fdiv\u003E";
-;pug_debug_line = 14;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 15;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_mixins["script"]([
       {name: "@loadingio/ldquery"},
       {name: "ldview"}
     ]);
-;pug_debug_line = 18;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 19;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "\u003Cscript type=\"module\"\u003E";
-;pug_debug_line = 18;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
+;pug_debug_line = 19;pug_debug_filename = "src\u002Fpug\u002Findex.pug";
 pug_html = pug_html + "var view,query,qs,k,v,script;view=new ldview({initRender:false,root:document.body,ctx:{},handler:{wall:function(e){var r,t;r=e.node,t=e.ctx;return r.style.backgroundImage=\"url(\"+t.img+\")\"}}});window.jsonFlickrApi=function(o){var c,s;console.log(o);c={idx:0};view.setCtx(c);s=function(){var e,r,t,i,n;e=o.photos.photo;r=e[c.idx];t=r.server,i=r.id,n=r.secret;c.img=\"https:\u002F\u002Flive.staticflickr.com\u002F\"+t+\"\u002F\"+i+\"_\"+n+\".jpg\";c.idx++;view.render();if(e[c.idx]){return setTimeout(s,5e3)}};return s()};query={page:1,per_page:100,user_id:\"129321464@N04\",method:\"flickr.photos.search\",api_key:\"dcd316de73a13e64aab96966bdc48ab8\",format:\"json\"};qs=function(){var e,r=[];for(k in e=query){v=e[k];r.push([k,v])}return r}().map(function(e){var r,t;r=e[0],t=e[1];return r+\"=\"+t}).join(\"&\");script=document.createElement(\"script\");script.setAttribute(\"src\",\"https:\u002F\u002Fapi.flickr.com\u002Fservices\u002Frest?\"+qs);document.body.appendChild(script);\u003C\u002Fscript\u003E\u003C\u002Fbody\u003E\u003C\u002Fhtml\u003E";
     }.call(this, "Array" in locals_for_with ?
         locals_for_with.Array :

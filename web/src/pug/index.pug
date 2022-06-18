@@ -3,6 +3,7 @@ html
   include @/@loadingio/bootstrap.ext/index.pug
   include @/ldview/index.pug
   head
+    - libLoader.root("assets/lib");
     +css([
       {name: "bootstrap", path: "dist/css/bootstrap.min.css"}
     ])
